@@ -190,5 +190,13 @@ namespace Entidades
             return respuesta;
         }
 
+        /// <summary>
+        /// Calculara y retornara el codigo hash del empleado
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            return this.dni.GetHashCode() + this.nombreUsuario.GetHashCode();
+        }
     }
 }

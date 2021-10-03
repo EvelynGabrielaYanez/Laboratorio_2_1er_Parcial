@@ -83,6 +83,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
                 costoTotal += producto.Precio * parProductoCantida.Value;
                 cantidadTotal += parProductoCantida.Value;
             }
+            dgvCarrito.Columns["cantidad"].DefaultCellStyle.BackColor = Color.FromArgb(171, 143, 192);
 
             this.lblValorCostoTotal.Text = $"{costoTotal}";
             this.lblValorCantidad.Text = $"{cantidadTotal}";

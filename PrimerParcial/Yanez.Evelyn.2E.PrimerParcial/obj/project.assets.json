@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Pruebas\\PrimerParcial\\Yanez.Evelyn.2E.PrimerParcial\\Yanez.Evelyn.2E.PrimerParcial.csproj",
+      "projectUniqueName": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Laboratorio_2_1er_Parcial\\PrimerParcial\\Yanez.Evelyn.2E.PrimerParcial\\Yanez.Evelyn.2E.PrimerParcial.csproj",
       "projectName": "Yanez.Evelyn.2E.PrimerParcial",
-      "projectPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Pruebas\\PrimerParcial\\Yanez.Evelyn.2E.PrimerParcial\\Yanez.Evelyn.2E.PrimerParcial.csproj",
+      "projectPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Laboratorio_2_1er_Parcial\\PrimerParcial\\Yanez.Evelyn.2E.PrimerParcial\\Yanez.Evelyn.2E.PrimerParcial.csproj",
       "packagesPath": "C:\\Users\\EGY96\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Pruebas\\PrimerParcial\\Yanez.Evelyn.2E.PrimerParcial\\obj\\",
+      "outputPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Laboratorio_2_1er_Parcial\\PrimerParcial\\Yanez.Evelyn.2E.PrimerParcial\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\EGY96\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Pruebas\\PrimerParcial\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Pruebas\\PrimerParcial\\Entidades\\Entidades.csproj"
+            "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Laboratorio_2_1er_Parcial\\PrimerParcial\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Laboratorio_2_1er_Parcial\\PrimerParcial\\Entidades\\Entidades.csproj"
             }
           }
         }

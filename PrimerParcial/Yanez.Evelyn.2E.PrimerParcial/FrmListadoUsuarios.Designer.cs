@@ -43,6 +43,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             this.chbActivos = new System.Windows.Forms.CheckBox();
             this.pnlActivos = new System.Windows.Forms.Panel();
             this.pnlInactivos = new System.Windows.Forms.Panel();
+            this.btnSaldo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsuarios)).BeginInit();
             this.panelTipos.SuspendLayout();
             this.pnlActivos.SuspendLayout();
@@ -214,12 +215,29 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             this.pnlInactivos.Size = new System.Drawing.Size(91, 24);
             this.pnlInactivos.TabIndex = 15;
             // 
-            // FormListadoUsuarios
+            // btnSaldo
+            // 
+            this.btnSaldo.BackColor = System.Drawing.Color.Silver;
+            this.btnSaldo.BackgroundImage = global::Yanez.Evelyn._2E.PrimerParcial.Properties.Resources.imgSaldo1;
+            this.btnSaldo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSaldo.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnSaldo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver;
+            this.btnSaldo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnSaldo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSaldo.Location = new System.Drawing.Point(116, 65);
+            this.btnSaldo.Name = "btnSaldo";
+            this.btnSaldo.Size = new System.Drawing.Size(35, 34);
+            this.btnSaldo.TabIndex = 16;
+            this.btnSaldo.UseVisualStyleBackColor = false;
+            this.btnSaldo.Click += new System.EventHandler(this.btnSaldo_Click);
+            // 
+            // FrmListadoUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(724, 407);
+            this.Controls.Add(this.btnSaldo);
             this.Controls.Add(this.pnlInactivos);
             this.Controls.Add(this.pnlActivos);
             this.Controls.Add(this.txtBuscar);
@@ -233,7 +251,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FormListadoUsuarios";
+            this.Name = "FrmListadoUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado de Usuarios";
             this.Load += new System.EventHandler(this.FormListadoUsuarios_Load);
@@ -264,5 +282,6 @@ namespace Yanez.Evelyn._2E.PrimerParcial
         private System.Windows.Forms.CheckBox chbActivos;
         private System.Windows.Forms.Panel pnlActivos;
         private System.Windows.Forms.Panel pnlInactivos;
+        private System.Windows.Forms.Button btnSaldo;
     }
 }

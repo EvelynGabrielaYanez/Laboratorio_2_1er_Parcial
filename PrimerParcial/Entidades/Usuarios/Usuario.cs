@@ -140,5 +140,13 @@ namespace Entidades
         {
             return !(usuario1 == usuario2);
         }
+        /// <summary>
+        /// Calculara y retornara el codigo hash del usuario
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            return this.dni.GetHashCode();
+        }
     }
 }

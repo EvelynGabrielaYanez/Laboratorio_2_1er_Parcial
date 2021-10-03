@@ -246,5 +246,14 @@ namespace Entidades
             }
             return respuesta;
         }
+        /// <summary>
+        /// Calculara y retornara el codigo hash del cliente
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            return this.dni.GetHashCode();
+        }
+
     }
 }

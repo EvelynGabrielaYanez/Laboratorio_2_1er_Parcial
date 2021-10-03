@@ -233,6 +233,26 @@ namespace Yanez.Evelyn._2E.PrimerParcial.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgSaldo {
+            get {
+                object obj = ResourceManager.GetObject("imgSaldo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgSaldo1 {
+            get {
+                object obj = ResourceManager.GetObject("imgSaldo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mix_Canarios_Mezcla_Semillas_Nelsoni {
             get {
                 object obj = ResourceManager.GetObject("Mix_Canarios_Mezcla_Semillas_Nelsoni", resourceCulture);

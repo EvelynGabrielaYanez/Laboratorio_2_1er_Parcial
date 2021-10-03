@@ -25,6 +25,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             this.cliente = cliente;
             nudMontoIngresado.Maximum = decimal.MaxValue;
             nudMontoIngresado.Minimum = 1;
+            DialogResult = DialogResult.Cancel;
         }
 
         /// <summary>
@@ -56,7 +57,9 @@ namespace Yanez.Evelyn._2E.PrimerParcial
         /// <param name="e"></param>
         private void btnCargarSaldo_Click(object sender, EventArgs e)
         {
-            FrmEmpleado.cliente.CargarSaldo((double)nudMontoIngresado.Value);
+            if (this.cliente.CargarSaldo((double)nudMontoIngresado.Value))
+                DialogResult = DialogResult.OK;
+
             this.Close();
         }
 

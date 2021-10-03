@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Pruebas\\PrimerParcial\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Laboratorio_2_1er_Parcial\\PrimerParcial\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Pruebas\\PrimerParcial\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Laboratorio_2_1er_Parcial\\PrimerParcial\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Pruebas\\PrimerParcial\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Laboratorio_2_1er_Parcial\\PrimerParcial\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Pruebas\\PrimerParcial\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Laboratorio_2_1er_Parcial\\PrimerParcial\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\EGY96\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Pruebas\\PrimerParcial\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\EGY96\\OneDrive\\Escritorio\\Laboratorio_2_1er_Parcial\\PrimerParcial\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EGY96\\AppData\\Roaming\\NuGet\\NuGet.Config",

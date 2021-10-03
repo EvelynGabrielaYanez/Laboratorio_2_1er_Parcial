@@ -97,6 +97,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
                 chbInactivos.Visible = false;
                 pnlActivos.Visible = false;
                 pnlInactivos.Visible = false;
+                btnSaldo.Visible = true;
             }
             else
             {
@@ -105,6 +106,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
                 chbInactivos.Visible = true;
                 pnlActivos.Visible = true;
                 pnlInactivos.Visible = true;
+                btnSaldo.Visible = false;
             }
         }
 
@@ -257,6 +259,29 @@ namespace Yanez.Evelyn._2E.PrimerParcial
                     // configuro los campos
                     this.dgUsuarios.Columns["Carrito"].Visible = false;
                     break;
+            }
+        }
+
+        /// <summary>
+        /// Abre el formulario para la carga de saldo del cliente
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSaldo_Click(object sender, EventArgs e)
+        {
+            Usuario usuario = this.ObtenerDatosDeSeleccion();
+            if (usuario != null && usuario is Cliente)
+            {
+                FrmCargarSaldo frmCargarSaldo = new FrmCargarSaldo((Cliente)PetShop.BuscarCliente((Cliente)usuario));
+                if (frmCargarSaldo.ShowDialog() == DialogResult.OK)
+                {
+                    this.HacerSonidoExito();
+                    this.ActualizarDataGrid();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar el cliente que desea modificar");
             }
         }
     }
