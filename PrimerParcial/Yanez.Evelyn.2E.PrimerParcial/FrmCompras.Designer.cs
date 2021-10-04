@@ -99,6 +99,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             this.lvCarroDeCompras.TabIndex = 9;
             this.lvCarroDeCompras.UseCompatibleStateImageBehavior = false;
             this.lvCarroDeCompras.View = System.Windows.Forms.View.SmallIcon;
+            this.lvCarroDeCompras.DragDrop += new System.Windows.Forms.DragEventHandler(this.lvCarroDeCompras_DragDrop);
             this.lvCarroDeCompras.DragEnter += new System.Windows.Forms.DragEventHandler(this.lvCarroDeCompras_DragEnter);
             // 
             // btnTirarProducto
@@ -159,7 +160,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             this.cmbTipoDeProducto.TabIndex = 7;
             this.cmbTipoDeProducto.SelectedIndexChanged += new System.EventHandler(this.cmbTipoDeProducto_SelectedIndexChanged);
             // 
-            // FormCompras
+            // FrmCompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -171,7 +172,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FormCompras";
+            this.Name = "FrmCompras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compras";
             this.Load += new System.EventHandler(this.FormCompras_Load);

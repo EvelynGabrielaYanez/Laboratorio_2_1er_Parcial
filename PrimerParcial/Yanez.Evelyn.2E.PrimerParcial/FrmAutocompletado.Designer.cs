@@ -30,8 +30,8 @@ namespace Yanez.Evelyn._2E.PrimerParcial
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAutocompletar));
-            this.cmbEmpleado = new System.Windows.Forms.CheckBox();
-            this.cmbAdministrador = new System.Windows.Forms.CheckBox();
+            this.chbEmpleado = new System.Windows.Forms.CheckBox();
+            this.chbAdministrador = new System.Windows.Forms.CheckBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,29 +39,29 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             this.pnlFondo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cmbEmpleado
+            // chbEmpleado
             // 
-            this.cmbEmpleado.AutoSize = true;
-            this.cmbEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cmbEmpleado.Location = new System.Drawing.Point(21, 44);
-            this.cmbEmpleado.Name = "cmbEmpleado";
-            this.cmbEmpleado.Size = new System.Drawing.Size(95, 23);
-            this.cmbEmpleado.TabIndex = 0;
-            this.cmbEmpleado.Text = "Empleado";
-            this.cmbEmpleado.UseVisualStyleBackColor = true;
-            this.cmbEmpleado.CheckedChanged += new System.EventHandler(this.ChbEmpleado_CheckedChanged);
+            this.chbEmpleado.AutoSize = true;
+            this.chbEmpleado.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.chbEmpleado.Location = new System.Drawing.Point(21, 44);
+            this.chbEmpleado.Name = "chbEmpleado";
+            this.chbEmpleado.Size = new System.Drawing.Size(95, 23);
+            this.chbEmpleado.TabIndex = 0;
+            this.chbEmpleado.Text = "Empleado";
+            this.chbEmpleado.UseVisualStyleBackColor = true;
+            this.chbEmpleado.CheckedChanged += new System.EventHandler(this.ChbEmpleado_CheckedChanged);
             // 
-            // cmbAdministrador
+            // chbAdministrador
             // 
-            this.cmbAdministrador.AutoSize = true;
-            this.cmbAdministrador.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cmbAdministrador.Location = new System.Drawing.Point(128, 44);
-            this.cmbAdministrador.Name = "cmbAdministrador";
-            this.cmbAdministrador.Size = new System.Drawing.Size(125, 23);
-            this.cmbAdministrador.TabIndex = 1;
-            this.cmbAdministrador.Text = "Administrador";
-            this.cmbAdministrador.UseVisualStyleBackColor = true;
-            this.cmbAdministrador.CheckedChanged += new System.EventHandler(this.cmbAdministrador_CheckedChanged);
+            this.chbAdministrador.AutoSize = true;
+            this.chbAdministrador.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.chbAdministrador.Location = new System.Drawing.Point(128, 44);
+            this.chbAdministrador.Name = "chbAdministrador";
+            this.chbAdministrador.Size = new System.Drawing.Size(125, 23);
+            this.chbAdministrador.TabIndex = 1;
+            this.chbAdministrador.Text = "Administrador";
+            this.chbAdministrador.UseVisualStyleBackColor = true;
+            this.chbAdministrador.CheckedChanged += new System.EventHandler(this.chbAdministrador_CheckedChanged);
             // 
             // btnCancelar
             // 
@@ -99,9 +99,9 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             // 
             this.pnlFondo.Controls.Add(this.label1);
             this.pnlFondo.Controls.Add(this.btnAceptar);
-            this.pnlFondo.Controls.Add(this.cmbAdministrador);
+            this.pnlFondo.Controls.Add(this.chbAdministrador);
             this.pnlFondo.Controls.Add(this.btnCancelar);
-            this.pnlFondo.Controls.Add(this.cmbEmpleado);
+            this.pnlFondo.Controls.Add(this.chbEmpleado);
             this.pnlFondo.Location = new System.Drawing.Point(16, 14);
             this.pnlFondo.Name = "pnlFondo";
             this.pnlFondo.Size = new System.Drawing.Size(256, 112);
@@ -130,8 +130,8 @@ namespace Yanez.Evelyn._2E.PrimerParcial
 
         #endregion
 
-        private System.Windows.Forms.CheckBox cmbEmpleado;
-        private System.Windows.Forms.CheckBox cmbAdministrador;
+        private System.Windows.Forms.CheckBox chbEmpleado;
+        private System.Windows.Forms.CheckBox chbAdministrador;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Label label1;

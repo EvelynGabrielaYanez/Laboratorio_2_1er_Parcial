@@ -113,10 +113,11 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             {
                 lvProductos_MouseDoubleClick(sender, e);
             }
-            else if (lvProductos.SelectedItems.Count > 0 && e.Clicks == 1)
+            else
             {
-                ListViewItem item = lvProductos.SelectedItems[0];
-                DoDragDrop(item.Name, DragDropEffects.Copy);
+                ListViewItem item = lvProductos.GetItemAt(e.X, e.Y);
+                if (item is not null)
+                    DoDragDrop(item.Name, DragDropEffects.Copy);
             }
         }
 
@@ -173,12 +174,21 @@ namespace Yanez.Evelyn._2E.PrimerParcial
         /// Al recibir una entrada validara si el producto se encuentra en el canasto
         /// y en caso no estarlo validara que el local tenga stock del mismo y lo agregara.
         /// Caso contrario seteara el errorprovider con el error correspondiente.
-        /// </summary>
+        /// </summary>7
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void lvCarroDeCompras_DragEnter(object sender, DragEventArgs e)
         {
-            e.Effect = DragDropEffects.Move;
+
+            if (e.Data.GetDataPresent(typeof(System.String)))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+
+        }
+
+        private void lvCarroDeCompras_DragDrop(object sender, DragEventArgs e)
+        {
             string strId = (string)e.Data.GetData(DataFormats.Text);
 
             if (int.TryParse(strId, out int id) && !FrmEmpleado.cliente.ValidarProductoEnCanasto(id))
@@ -192,7 +202,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
                 }
                 else
                 {
-                    erroresInformacion.SetError(lvProductos,"No se pudo agregar el producto. No tenemos stock.");
+                    erroresInformacion.SetError(lvProductos, "No se pudo agregar el producto. No tenemos stock.");
                 }
             }
             else
@@ -242,5 +252,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
         {
             this.Close();
         }
+
+
     }
 }
