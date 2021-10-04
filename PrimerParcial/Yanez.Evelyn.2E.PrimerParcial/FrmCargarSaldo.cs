@@ -81,5 +81,10 @@ namespace Yanez.Evelyn._2E.PrimerParcial
         {
             lblValorSaldoFinal.Text = (this.cliente.Saldo + (double)this.nudMontoIngresado.Value).ToString();
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

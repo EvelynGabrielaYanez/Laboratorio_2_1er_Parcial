@@ -176,6 +176,7 @@ namespace Yanez.Evelyn._2E.PrimerParcial
             this.btnVolver.TabIndex = 13;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // pnlFondo
             // 
